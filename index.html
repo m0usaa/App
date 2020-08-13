@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Microsoft Developers </title>
+    <link style="height: auto; width: auto;" rel="icon" href="https://banner2.cleanpng.com/20171220/fqq/microsoft-icon-png-5a3a1dc0411aa4.45794611151375814426679347.jpg">
+    <style>
+        body{
+            text-align: center;
+            color:#737375;
+            background: white;
+            width: auto;
+        }
+        #img{
+            float: center;
+            width: auto;
+        }
+        #html{
+            width: auto;
+            height: auto;
+            color:#737375;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="openDialog()">Join Us</button>
+ <dialog style="color: #737375; width: 90%;" id="hello">
+    <img height="200px" src="https://zdnet2.cbsistatic.com/hub/i/r/2014/08/27/0d77a99a-2da9-11e4-9e6a-00505685119a/resize/1200x900/02acdb68a1edf918b42c3fabf4843745/microsofts-logo-gets-a-makeover.jpg" alt="">
+   <code style="text-align: center;">
+    <p>
+        <h1>Welcome back</h1> 
+    </p>
+    <p>
+        <h1>MOUSA EL SAWAH</h1>
+    </p>
+    <p>
+        <br>
+    <span id="text">Send Us Your Invetation Code :</span>
+    <p>
+        <h1 maxlength="10" id="html"contenteditable="true"></h1>
+    </p>
+    <button onclick="Send" type="button">Send</button>
+    <button onclick="Delete" type="button">Delete</button>
+    <button onclick="Close()">Close</button>
+    <script>
+        function Send(){
+            document.getElementById("text").contentEditable=false;
+        }
+        function Delete(){
+            document.getElementById("text").contentEditable=true;
+        }
+        function Close(){
+            document.getElementById("hello").removeAttribute("open");
+        }
+        function openDialog(){
+            document.getElementById("hello").setAttribute("open","true"); 
+        }
+    </script>
+    <br>
+    <p>
+        <h1>Microsoft Developers</h1>
+    </p>
+    <p>
+        <a style="text-align: center;" href="https://www.microsoft.com/" target="_blank">Contact Us</a>
+    </p>
+   </code> 
+ </dialog> 
+</body>
+</html>
